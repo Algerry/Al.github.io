@@ -1,0 +1,635 @@
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: cambria;
+      background-color: #000;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #111;
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: verdana;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+    .navbar-brand span {
+      color: red;
+    }
+
+    .navbar-nav {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+      transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+
+    .nav-link:hover {
+       border-bottom: 2px solid red;
+       padding-bottom: 5px;
+       color: red;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url("Mappa\ eremika.jpg"); /* Ganti sesuai path gambar */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      padding-top: 100px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content h6 {
+      color: red;
+      font-weight: bolder;
+      margin-bottom: 15px;
+      font-family: Verdana;
+      font-size: 15px;
+    }
+
+    .hero-content h1 {
+      font-weight: bolder;
+      font-size: 48px;
+      font-family: verdana;
+    }
+
+    /* Video Section */
+    .content-section-1 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+    .overlay {
+      position: relative;
+      width: 60%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 100px;
+      z-index: 1;
+    }
+
+    .overlay h1 {
+      font-family:verdana;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .overlay p {
+      font-size: 15px;
+      margin-bottom: 30px;
+      max-width: 500px;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .form-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-container input[type="email"] {
+      padding: 15px;
+      font-size: 16px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-container button {
+      padding: 15px 25px;
+      font-size: 16px;
+      background-color: #2a4f4f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    
+
+/*----------------------------------------------------------
+    SECTION 2
+--------------------------------------------------------------*/
+
+    .content-section-2 {
+  display: flex;
+  position: relative;
+  height: 100vh;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content-section-2 .overlay-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; /* posisi konten ke kanan */
+  text-align: right; /* teks ke kanan */
+  z-index: 1;
+}
+
+.overlay-2 h1 {
+      font-family:verdana ;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .overlay-2 p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 500px;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .form-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-container input[type="email"] {
+      padding: 15px;
+      font-size: 16px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-container button {
+      padding: 15px 25px;
+      font-size: 16px;
+      background-color: #2a4f4f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+
+/* ----------------------------------------------------
+     SECTION 3
+---------------------------------------------------------*/
+
+ .content-section-3 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.content-section-3 .overlay-3 {
+      position: relative;
+      width: 60%;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 100px;
+      z-index: 1;
+    }
+
+    .overlay-3 h1 {
+      font-family: Verdana;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .overlay-3 p {
+      font-size: 15px;
+      margin-bottom: 30px;
+      max-width: 500px;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .form-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-container input[type="email"] {
+      padding: 15px;
+      font-size: 16px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-container button {
+      padding: 15px 25px;
+      font-size: 16px;
+      background-color: #2a4f4f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+/*----------------------------------------------
+      SECTION 4
+----------------------------------------------*/
+
+.content-section-4 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+    .content-section-4 .overlay-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end; /* posisi konten ke kanan */
+  text-align: right; /* teks ke kanan */
+  z-index: 1;
+}
+
+.overlay-4 h1 {
+      font-family: verdana;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .overlay-4 p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 500px;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .form-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-container input[type="email"] {
+      padding: 15px;
+      font-size: 16px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-container button {
+      padding: 15px 25px;
+      font-size: 16px;
+      background-color: #2a4f4f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+/*--------------------------------------------
+    SECTION 5
+----------------------------------------------*/
+
+.content-section-5 {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+    .content-section-5 .overlay-5 {
+        position: relative;
+        width: 60%;
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 100px;
+        z-index: 1;
+        }
+
+    .overlay-5 h1 {
+      font-family: verdana;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .overlay-5 p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 500px;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .form-container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .form-container input[type="email"] {
+      padding: 15px;
+      font-size: 16px;
+      width: 300px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .form-container button {
+      padding: 15px 25px;
+      font-size: 16px;
+      background-color: #2a4f4f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /*
+      THANKS TO 
+    */
+
+    .thank-you-section {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.thank-you-section h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.thank-you-section p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-member {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 250px;
+}
+
+.team-member h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+.closing-message {
+  font-size: 16px;
+  color: #777;
+  margin-top: 50px;
+}
+
+
+
+    /*
+       FOOTER
+    */
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer .footer-links a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    footer .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 20px;
+    }
+
+    footer p {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+
+    @media (max-width: 768px) {
+  .overlay,
+  .overlay-2,
+  .overlay-3,
+  .overlay-4,
+  .overlay-5 {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .overlay h1,
+  .overlay-2 h1,
+  .overlay-3 h1,
+  .overlay-4 h1,
+  .overlay-5 h1 {
+    font-size: 24px;
+  }
+
+  .overlay p,
+  .overlay-2 p,
+  .overlay-3 p,
+  .overlay-4 p,
+  .overlay-5 p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container input,
+  .form-container button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .hero {
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content h6 {
+    font-size: 12px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-nav li {
+    margin: 0;
+  }
+
+  .content-section-1,
+  .content-section-2,
+  .content-section-3,
+  .content-section-4,
+  .content-section-5 {
+    height: auto;
+    flex-direction: column;
+  }
+
+  .video-bg {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+
+  .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
